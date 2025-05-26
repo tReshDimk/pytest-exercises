@@ -15,3 +15,14 @@ def cart():
     for i in ['апельсиновый сок', 'манго', 'молоко']:
         test_cart.add_item(i)
     return test_cart
+
+
+@pytest.fixture(scope='session')
+def city_name():
+    return []
+
+
+@pytest.fixture(scope='session')
+def append_city(city_name):
+    city_name.append('Moscow')
+
