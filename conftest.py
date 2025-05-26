@@ -25,4 +25,3 @@ def city_name():
 @pytest.fixture(scope='session')
 def append_city(city_name):
     city_name.append('Moscow')
-
